@@ -417,7 +417,7 @@ db|test.(0).cnf
 # case_insensitive
 # source_file
 xuat_xung.bdf
-44433d676bc1bdf2d848d37f6fb0befb
+4395d5fd6b18cc2495b877cb57b2c6e
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -425,6 +425,26 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+limit_check
+# storage
+db|test.(9).cnf
+db|test.(9).cnf
+# case_insensitive
+# source_file
+limit_check.bdf
+f4832be2e1759e7f5b4bff8a3d109f74
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+limit_check:inst5
 }
 # macro_sequence
 

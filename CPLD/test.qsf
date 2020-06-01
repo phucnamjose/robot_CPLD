@@ -59,8 +59,6 @@ set_location_assignment PIN_92 -to Data[4]
 set_location_assignment PIN_91 -to Data[5]
 set_location_assignment PIN_89 -to Data[6]
 set_location_assignment PIN_87 -to Data[7]
-set_global_assignment -name BDF_FILE xuat_xung.bdf
-set_global_assignment -name VERILOG_FILE test.v
 set_global_assignment -name MISC_FILE "C:/Users/Welcome/Desktop/xuat xung/CPLD/test.dpf"
 set_location_assignment PIN_75 -to PULSE_WR
 set_global_assignment -name MISC_FILE "C:/Users/ADMIN/Desktop/xuat xung/CPLD/test.dpf"
@@ -76,12 +74,7 @@ set_location_assignment PIN_54 -to pulse0
 set_location_assignment PIN_53 -to dir0
 set_location_assignment PIN_47 -to dir1
 set_global_assignment -name MISC_FILE "C:/Users/anhkh/Documents/CPLD/test.dpf"
-set_global_assignment -name BDF_FILE enc_filter.bdf
-set_global_assignment -name BDF_FILE encoder_module.bdf
-set_global_assignment -name BDF_FILE encoder.bdf
 set_global_assignment -name MISC_FILE "D:/DH Bach Khoa/Luan van/Software_thesis_2019/HexapodThesis-CPLD/test.dpf"
-set_global_assignment -name QIP_FILE lpm_bustri0.qip
-set_global_assignment -name QIP_FILE lpm_xor0.qip
 set_location_assignment PIN_86 -to Data[8]
 set_location_assignment PIN_84 -to Data[10]
 set_location_assignment PIN_83 -to Data[11]
@@ -90,14 +83,11 @@ set_location_assignment PIN_81 -to Data[13]
 set_location_assignment PIN_78 -to Data[14]
 set_location_assignment PIN_77 -to Data[15]
 set_location_assignment PIN_67 -to NOE
-set_global_assignment -name QIP_FILE lpm_counter0.qip
 set_global_assignment -name MISC_FILE "D:/Works/git/HexapodThesis/CPLD/test.dpf"
 set_global_assignment -name MISC_FILE "D:/ROBOTTEAM/robotic-lspb-control-step-motor/fpga/CPLD/test.dpf"
 set_global_assignment -name MISC_FILE "F:/THESIS/FPGA/fpga/CPLD/test.dpf"
-set_global_assignment -name VECTOR_WAVEFORM_FILE test_xuat_xung.vwf
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name VECTOR_WAVEFORM_FILE test.vwf
 set_location_assignment PIN_15 -to LS0
 set_location_assignment PIN_8 -to LS1
 set_location_assignment PIN_17 -to LS2
@@ -113,3 +103,14 @@ set_location_assignment PIN_85 -to Data[9]
 set_location_assignment PIN_61 -to STOP
 set_global_assignment -name MISC_FILE "F:/THESIS/SOURCE/robot_CPLD/CPLD/test.dpf"
 set_location_assignment PIN_76 -to ENCODER_RESET
+set_global_assignment -name BDF_FILE limit_check.bdf
+set_global_assignment -name BDF_FILE xuat_xung.bdf
+set_global_assignment -name VERILOG_FILE test.v
+set_global_assignment -name BDF_FILE enc_filter.bdf
+set_global_assignment -name BDF_FILE encoder_module.bdf
+set_global_assignment -name BDF_FILE encoder.bdf
+set_global_assignment -name QIP_FILE lpm_bustri0.qip
+set_global_assignment -name QIP_FILE lpm_xor0.qip
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE test_xuat_xung.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE test.vwf

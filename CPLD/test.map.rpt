@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test
-Mon Jun 01 22:25:40 2020
+Mon Jun 01 22:44:12 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -49,12 +49,12 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Jun 01 22:25:40 2020        ;
+; Analysis & Synthesis Status ; Successful - Mon Jun 01 22:44:12 2020        ;
 ; Quartus II Version          ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name               ; test                                         ;
 ; Top-level Entity Name       ; xuat_xung                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 253                                          ;
+; Total logic elements        ; 265                                          ;
 ; Total pins                  ; 41                                           ;
 ; Total virtual pins          ; 0                                            ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                ;
@@ -143,6 +143,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                 ;
 +----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------+
+; limit_check.bdf                  ; yes             ; User Block Diagram/Schematic File        ; F:/THESIS/SOURCE/robot_CPLD/CPLD/limit_check.bdf             ;
 ; xuat_xung.bdf                    ; yes             ; User Block Diagram/Schematic File        ; F:/THESIS/SOURCE/robot_CPLD/CPLD/xuat_xung.bdf               ;
 ; test.v                           ; yes             ; User Verilog HDL File                    ; F:/THESIS/SOURCE/robot_CPLD/CPLD/test.v                      ;
 ; dda_module.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/THESIS/SOURCE/robot_CPLD/CPLD/dda_module.bdf              ;
@@ -157,33 +158,33 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 253   ;
-;     -- Combinational with no register       ; 153   ;
-;     -- Register only                        ; 33    ;
+; Total logic elements                        ; 265   ;
+;     -- Combinational with no register       ; 161   ;
+;     -- Register only                        ; 37    ;
 ;     -- Combinational with a register        ; 67    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 64    ;
+;     -- 4 input functions                    ; 68    ;
 ;     -- 3 input functions                    ; 75    ;
-;     -- 2 input functions                    ; 76    ;
+;     -- 2 input functions                    ; 80    ;
 ;     -- 1 input functions                    ; 5     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 164   ;
+;     -- normal mode                          ; 176   ;
 ;     -- arithmetic mode                      ; 89    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 35    ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 100   ;
+; Total registers                             ; 104   ;
 ; Total logic cells in carry chains           ; 99    ;
 ; I/O pins                                    ; 41    ;
 ; Maximum fan-out node                        ; CLK   ;
 ; Maximum fan-out                             ; 100   ;
-; Total fan-out                               ; 916   ;
-; Average fan-out                             ; 3.12  ;
+; Total fan-out                               ; 948   ;
+; Average fan-out                             ; 3.10  ;
 +---------------------------------------------+-------+
 
 
@@ -192,7 +193,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                      ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------+--------------+
-; |xuat_xung                 ; 253 (1)     ; 100          ; 0          ; 41   ; 0            ; 153 (1)      ; 33 (0)            ; 67 (0)           ; 99 (0)          ; 0 (0)      ; |xuat_xung                               ; work         ;
+; |xuat_xung                 ; 265 (1)     ; 104          ; 0          ; 41   ; 0            ; 161 (1)      ; 37 (0)            ; 67 (0)           ; 99 (0)          ; 0 (0)      ; |xuat_xung                               ; work         ;
 ;    |74373b:inst1|          ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |xuat_xung|74373b:inst1                  ; work         ;
 ;    |dda_module:inst|       ; 246 (5)     ; 100          ; 0          ; 0    ; 0            ; 146 (5)      ; 33 (0)            ; 67 (0)           ; 99 (0)          ; 0 (0)      ; |xuat_xung|dda_module:inst               ; work         ;
 ;       |74373b:inst18|      ; 8 (8)       ; 0            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |xuat_xung|dda_module:inst|74373b:inst18 ; work         ;
@@ -203,6 +204,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |test:inst4|         ; 52 (52)     ; 20           ; 0          ; 0    ; 0            ; 32 (32)      ; 8 (8)             ; 12 (12)          ; 20 (20)         ; 0 (0)      ; |xuat_xung|dda_module:inst|test:inst4    ; work         ;
 ;       |test:inst5|         ; 45 (45)     ; 20           ; 0          ; 0    ; 0            ; 25 (25)      ; 8 (8)             ; 12 (12)          ; 20 (20)         ; 0 (0)      ; |xuat_xung|dda_module:inst|test:inst5    ; work         ;
 ;       |test:inst|          ; 45 (45)     ; 20           ; 0          ; 0    ; 0            ; 25 (25)      ; 8 (8)             ; 12 (12)          ; 20 (20)         ; 0 (0)      ; |xuat_xung|dda_module:inst|test:inst     ; work         ;
+;    |limit_check:inst5|     ; 12 (12)     ; 4            ; 0          ; 0    ; 0            ; 8 (8)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |xuat_xung|limit_check:inst5             ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -212,10 +214,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal    ; Free of Timing Hazards ;
 +-----------------------------------------------------+------------------------+------------------------+
-; dda_module:inst|74373b:inst2|19                     ; dda_module:inst|inst8  ; yes                    ;
 ; dda_module:inst|74373b:inst7|19                     ; dda_module:inst|inst10 ; yes                    ;
 ; dda_module:inst|74373b:inst18|19                    ; dda_module:inst|inst21 ; yes                    ;
 ; dda_module:inst|74373b:inst20|19                    ; dda_module:inst|inst22 ; yes                    ;
+; dda_module:inst|74373b:inst2|19                     ; dda_module:inst|inst8  ; yes                    ;
 ; 74373b:inst1|18                                     ; NADV                   ; yes                    ;
 ; 74373b:inst1|17                                     ; NADV                   ; yes                    ;
 ; 74373b:inst1|16                                     ; NADV                   ; yes                    ;
@@ -337,7 +339,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 100   ;
+; Total registers                              ; 104   ;
 ; Number of registers using Synchronous Clear  ; 35    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -455,8 +457,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Jun 01 22:25:37 2020
+    Info: Processing started: Mon Jun 01 22:44:09 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
+Info: Found 1 design units, including 1 entities, in source file limit_check.bdf
+    Info: Found entity 1: limit_check
 Info: Found 1 design units, including 1 entities, in source file xuat_xung.bdf
     Info: Found entity 1: xuat_xung
 Info: Found 1 design units, including 1 entities, in source file test.v
@@ -474,7 +478,6 @@ Info: Found 1 design units, including 1 entities, in source file lpm_xor0.v
 Info: Found 1 design units, including 1 entities, in source file lpm_counter0.v
     Info: Found entity 1: lpm_counter0
 Info: Elaborating entity "xuat_xung" for the top level hierarchy
-Warning: Pin "STOP" not connected
 Warning: Pin "ENC_1_A" not connected
 Warning: Pin "ENC_1_B" not connected
 Warning: Pin "ENC_2_A" not connected
@@ -482,6 +485,8 @@ Warning: Pin "ENC_2_B" not connected
 Warning: Pin "ENC_3_A" not connected
 Warning: Pin "ENC_3_B" not connected
 Warning: Pin "ENCODER_RESET" not connected
+Info: Elaborating entity "limit_check" for hierarchy "limit_check:inst5"
+Warning: Block or symbol "DFF" of instance "inst20" overlaps another block or symbol
 Warning: Using design file dda_module.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: dda_module
 Info: Elaborating entity "dda_module" for hierarchy "dda_module:inst"
@@ -546,8 +551,7 @@ Warning: The following bidir pins have no drivers
     Warning: Bidir "Data" has no driver
     Warning: Bidir "Data" has no driver
     Warning: Bidir "Data" has no driver
-Warning: Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "STOP"
+Warning: Design contains 7 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ENC_1_A"
     Warning (15610): No output dependent on input pin "ENC_1_B"
     Warning (15610): No output dependent on input pin "ENC_2_A"
@@ -555,15 +559,15 @@ Warning: Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ENC_3_A"
     Warning (15610): No output dependent on input pin "ENC_3_B"
     Warning (15610): No output dependent on input pin "ENCODER_RESET"
-Info: Implemented 294 device resources after synthesis - the final resource count might be different
+Info: Implemented 306 device resources after synthesis - the final resource count might be different
     Info: Implemented 17 input pins
     Info: Implemented 8 output pins
     Info: Implemented 16 bidirectional pins
-    Info: Implemented 253 logic cells
+    Info: Implemented 265 logic cells
 Info: Generated suppressed messages file F:/THESIS/SOURCE/robot_CPLD/CPLD/test.map.smsg
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 72 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 71 warnings
     Info: Peak virtual memory: 230 megabytes
-    Info: Processing ended: Mon Jun 01 22:25:40 2020
+    Info: Processing ended: Mon Jun 01 22:44:12 2020
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:04
 

@@ -1,0 +1,176 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 168 272)
+	(text "limit_check" (rect 5 0 66 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 240 25 252)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "PULSE1" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "PULSE1" (rect 21 27 65 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "DIR1" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "DIR1" (rect 21 43 46 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "PULSE2" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "PULSE2" (rect 21 59 65 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "DIR2" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "DIR2" (rect 21 75 46 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "PULSE3" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "PULSE3" (rect 21 91 65 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "DIR3" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "DIR3" (rect 21 107 46 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "PULSE4" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "PULSE4" (rect 21 123 65 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "DIR4" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "DIR4" (rect 21 139 46 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "LIMIT1" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "LIMIT1" (rect 21 155 56 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "LIMIT2" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "LIMIT2" (rect 21 171 56 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "LIMIT3" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "LIMIT3" (rect 21 187 56 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "LIMIT4" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "LIMIT4" (rect 21 203 56 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "STOP" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "STOP" (rect 21 219 52 233)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224)(line_width 1))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "PULSE_1" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "PULSE_1" (rect 80 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 1))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "DIR_1" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "DIR_1" (rect 98 43 131 57)(font "Arial" (font_size 8)))
+		(line (pt 152 48)(pt 136 48)(line_width 1))
+	)
+	(port
+		(pt 152 64)
+		(output)
+		(text "PULSE_2" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "PULSE_2" (rect 80 59 131 73)(font "Arial" (font_size 8)))
+		(line (pt 152 64)(pt 136 64)(line_width 1))
+	)
+	(port
+		(pt 152 80)
+		(output)
+		(text "DIR_2" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "DIR_2" (rect 98 75 131 89)(font "Arial" (font_size 8)))
+		(line (pt 152 80)(pt 136 80)(line_width 1))
+	)
+	(port
+		(pt 152 96)
+		(output)
+		(text "PULSE_3" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "PULSE_3" (rect 80 91 131 105)(font "Arial" (font_size 8)))
+		(line (pt 152 96)(pt 136 96)(line_width 1))
+	)
+	(port
+		(pt 152 112)
+		(output)
+		(text "DIR_3" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "DIR_3" (rect 98 107 131 121)(font "Arial" (font_size 8)))
+		(line (pt 152 112)(pt 136 112)(line_width 1))
+	)
+	(port
+		(pt 152 128)
+		(output)
+		(text "PULSE_4" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "PULSE_4" (rect 80 123 131 137)(font "Arial" (font_size 8)))
+		(line (pt 152 128)(pt 136 128)(line_width 1))
+	)
+	(port
+		(pt 152 144)
+		(output)
+		(text "DIR_4" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "DIR_4" (rect 98 139 131 153)(font "Arial" (font_size 8)))
+		(line (pt 152 144)(pt 136 144)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 240)(line_width 1))
+	)
+)

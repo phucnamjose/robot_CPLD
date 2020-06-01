@@ -1,5 +1,5 @@
 |xuat_xung
-pulse1 <= dda_module:inst.PULSE2
+pulse1 <= limit_check:inst5.PULSE_2
 PULSE_WR => dda_module:inst.PULSE_WR
 NADV => inst4.IN0
 Data[0] <> 74244:inst7.1Y1
@@ -12,19 +12,22 @@ Data[6] <> 74244:inst7.2Y3
 Data[7] <> 74244:inst7.2Y4
 NWE => dda_module:inst.WR
 CLK => dda_module:inst.CLK
-pulse2 <= dda_module:inst.PULSE3
-pulse3 <= dda_module:inst.PULSE4
-pulse0 <= dda_module:inst.PULSE1
-dir0 <= dda_module:inst.DIR1
-dir1 <= dda_module:inst.DIR2
-dir2 <= dda_module:inst.DIR3
-dir3 <= dda_module:inst.DIR4
-LS1 => 74244:inst7.1A2
-LS3 => inst3.IN0
+LS0 => limit_check:inst5.LIMIT1
 LS0 => 74244:inst7.1A1
+LS1 => limit_check:inst5.LIMIT2
+LS1 => 74244:inst7.1A2
+LS2 => limit_check:inst5.LIMIT3
 LS2 => 74244:inst7.1A3
+LS3 => inst3.IN0
+STOP => limit_check:inst5.STOP
+pulse2 <= limit_check:inst5.PULSE_3
+pulse3 <= limit_check:inst5.PULSE_4
+pulse0 <= limit_check:inst5.PULSE_1
+dir0 <= limit_check:inst5.DIR_1
+dir1 <= limit_check:inst5.DIR_2
+dir2 <= limit_check:inst5.DIR_3
+dir3 <= limit_check:inst5.DIR_4
 NOE => inst8.IN0
-STOP => ~NO_FANOUT~
 ENC_1_A => ~NO_FANOUT~
 ENC_1_B => ~NO_FANOUT~
 ENC_2_A => ~NO_FANOUT~
@@ -32,6 +35,45 @@ ENC_2_B => ~NO_FANOUT~
 ENC_3_A => ~NO_FANOUT~
 ENC_3_B => ~NO_FANOUT~
 ENCODER_RESET => ~NO_FANOUT~
+
+
+|xuat_xung|limit_check:inst5
+PULSE_4 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+PULSE4 => inst.IN0
+LIMIT4 => inst14.IN0
+LIMIT4 => inst13.CLK
+DIR4 => inst12.IN0
+DIR4 => inst13.DATAIN
+DIR4 => DIR_4.DATAIN
+STOP => inst.IN2
+STOP => inst3.IN2
+STOP => inst2.IN2
+STOP => inst1.IN2
+PULSE_3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+PULSE3 => inst3.IN0
+LIMIT3 => inst17.IN0
+LIMIT3 => inst16.CLK
+DIR3 => inst15.IN0
+DIR3 => inst16.DATAIN
+DIR3 => DIR_3.DATAIN
+PULSE_2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+PULSE2 => inst2.IN0
+LIMIT2 => inst21.IN0
+LIMIT2 => inst20.CLK
+DIR2 => inst19.IN0
+DIR2 => inst20.DATAIN
+DIR2 => DIR_2.DATAIN
+PULSE_1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+PULSE1 => inst1.IN0
+LIMIT1 => inst25.IN0
+LIMIT1 => inst24.CLK
+DIR1 => inst23.IN0
+DIR1 => inst24.DATAIN
+DIR1 => DIR_1.DATAIN
+DIR_4 <= DIR4.DB_MAX_OUTPUT_PORT_TYPE
+DIR_3 <= DIR3.DB_MAX_OUTPUT_PORT_TYPE
+DIR_2 <= DIR2.DB_MAX_OUTPUT_PORT_TYPE
+DIR_1 <= DIR1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |xuat_xung|dda_module:inst
