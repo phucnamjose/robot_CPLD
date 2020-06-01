@@ -72,16 +72,16 @@ ENC_2_A                      : 4         : input  : 3.3-V LVTTL       :         
 ENC_2_B                      : 5         : input  : 3.3-V LVTTL       :         : 1         : Y              
 ENC_3_A                      : 6         : input  : 3.3-V LVTTL       :         : 1         : Y              
 ENC_3_B                      : 7         : input  : 3.3-V LVTTL       :         : 1         : Y              
-LS3                          : 8         : input  : 3.3-V LVTTL       :         : 1         : Y              
+LS1                          : 8         : input  : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 9         : power  :                   : 3.3V    : 1         :                
 GNDIO                        : 10        : gnd    :                   :         :           :                
 GNDINT                       : 11        : gnd    :                   :         :           :                
 CLK                          : 12        : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCINT                       : 13        : power  :                   : 2.5V/3.3V :           :                
 GND*                         : 14        :        :                   :         : 1         :                
-LS2                          : 15        : input  : 3.3-V LVTTL       :         : 1         : Y              
-LS1                          : 16        : input  : 3.3-V LVTTL       :         : 1         : Y              
-LS0                          : 17        : input  : 3.3-V LVTTL       :         : 1         : Y              
+LS0                          : 15        : input  : 3.3-V LVTTL       :         : 1         : Y              
+LS3                          : 16        : input  : 3.3-V LVTTL       :         : 1         : Y              
+LS2                          : 17        : input  : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : 18        :        :                   :         : 1         :                
 GND*                         : 19        :        :                   :         : 1         :                
 GND*                         : 20        :        :                   :         : 1         :                

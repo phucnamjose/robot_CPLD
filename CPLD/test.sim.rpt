@@ -1,5 +1,5 @@
 Simulator report for test
-Mon Jun 01 12:35:51 2020
+Mon Jun 01 16:53:17 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -731,9 +731,13 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Jun 01 12:34:29 2020
+    Info: Processing started: Mon Jun 01 16:51:32 2020
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off test -c test
-Info: Using vector source file "F:/THESIS/SOURCE/CPLD/CPLD/test.vwf"
+Info: Using vector source file "F:/THESIS/SOURCE/robot_CPLD/CPLD/test.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "dda_module:inst|test:inst|Ntemp[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "dda_module:inst|test:inst4|Ntemp[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "dda_module:inst|test:inst5|Ntemp[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "dda_module:inst|test:inst11|Ntemp[7]" in design.
 Warning: Can't find signal in vector source file for input pin "|xuat_xung|NOE"
 Warning: Can't find signal in vector source file for input pin "|xuat_xung|STOP"
 Warning: Can't find signal in vector source file for input pin "|xuat_xung|LS0"
@@ -776,10 +780,10 @@ Info: Option to preserve fewer signal transitions to reduce memory requirements 
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is      33.41 %
 Info: Number of transitions in simulation is 4643381
-Info: Quartus II Simulator was successful. 0 errors, 12 warnings
+Info: Quartus II Simulator was successful. 0 errors, 16 warnings
     Info: Peak virtual memory: 163 megabytes
-    Info: Processing ended: Mon Jun 01 12:35:51 2020
-    Info: Elapsed time: 00:01:22
-    Info: Total CPU time (on all processors): 00:01:22
+    Info: Processing ended: Mon Jun 01 16:53:17 2020
+    Info: Elapsed time: 00:01:45
+    Info: Total CPU time (on all processors): 00:01:40
 
 

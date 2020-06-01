@@ -48,7 +48,7 @@ always @(posedge clk )  begin
 		clk_cnt = 0;
 		clk_20cnt = 0;
 		clk20u = 0;		
-		acc = Nmax1; //Nmax1 = 48
+		acc = Nmax1; //Nmax1 = 498
 		pulse = 0;
 	end		
 	else 

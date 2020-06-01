@@ -3,8 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Cfg)
-		Device PartName(EPM570T100) Path("F:/THESIS/FPGA/fpga/CPLD/") File("test.pof") MfrSpec(OpMask(23) SEC_Device(EPM570T100) Child_OpMask(2 23 7));
+	P ActionCode(Ign)
+		Device PartName(EPM570T100) MfrSpec(OpMask(0) SEC_Device(EPM570T100) Child_OpMask(2 0 0) FullPath("F:/THESIS/SOURCE/robot_CPLD/CPLD/test.pof"));
 
 ChainEnd;
 

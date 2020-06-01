@@ -1,5 +1,5 @@
 Flow report for test
-Tue Dec 24 17:27:42 2019
+Mon Jun 01 21:47:30 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-------------------------+----------------------------------------------+
-; Flow Status             ; Successful - Tue Dec 24 17:27:42 2019        ;
+; Flow Status             ; Successful - Mon Jun 01 21:47:30 2020        ;
 ; Quartus II Version      ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name           ; test                                         ;
 ; Top-level Entity Name   ; xuat_xung                                    ;
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/24/2019 17:27:33 ;
+; Start date & time ; 06/01/2020 21:47:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; test                ;
 +-------------------+---------------------+
@@ -69,7 +69,7 @@ applicable agreement for further details.
 +---------------------------------------+---------------------------------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                       ; Value                                                                     ; Default Value ; Entity Name ; Section Id ;
 +---------------------------------------+---------------------------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID                 ; 35490512119642.157718325308680                                            ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                 ; 35490512119642.159102283707972                                            ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                          ; LPM_BUSTRI                                                                ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                          ; LPM_XOR                                                                   ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                          ; LPM_COUNTER                                                               ; --            ; --          ; --         ;
@@ -96,6 +96,7 @@ applicable agreement for further details.
 ; MISC_FILE                             ; D:/Works/git/HexapodThesis/CPLD/test.dpf                                  ; --            ; --          ; --         ;
 ; MISC_FILE                             ; D:/ROBOTTEAM/robotic-lspb-control-step-motor/fpga/CPLD/test.dpf           ; --            ; --          ; --         ;
 ; MISC_FILE                             ; F:/THESIS/FPGA/fpga/CPLD/test.dpf                                         ; --            ; --          ; --         ;
+; MISC_FILE                             ; F:/THESIS/SOURCE/robot_CPLD/CPLD/test.dpf                                 ; --            ; --          ; --         ;
 ; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                                                                      ; --            ; --          ; --         ;
 ; TOP_LEVEL_ENTITY                      ; xuat_xung                                                                 ; test          ; --          ; --         ;
 +---------------------------------------+---------------------------------------------------------------------------+---------------+-------------+------------+
@@ -106,11 +107,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 230 MB              ; 00:00:04                           ;
-; Fitter                  ; 00:00:01     ; 1.0                     ; 238 MB              ; 00:00:03                           ;
+; Analysis & Synthesis    ; 00:00:04     ; 1.0                     ; 230 MB              ; 00:00:03                           ;
+; Fitter                  ; 00:00:02     ; 1.0                     ; 238 MB              ; 00:00:04                           ;
 ; Assembler               ; 00:00:01     ; 1.0                     ; 207 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 177 MB              ; 00:00:03                           ;
-; Total                   ; 00:00:06     ; --                      ; --                  ; 00:00:11                           ;
+; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 177 MB              ; 00:00:02                           ;
+; Total                   ; 00:00:09     ; --                      ; --                  ; 00:00:10                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

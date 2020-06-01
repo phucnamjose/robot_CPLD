@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for test
-Tue Dec 24 17:27:42 2019
+Mon Jun 01 21:47:30 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -703,7 +703,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Dec 24 17:27:41 2019
+    Info: Processing started: Mon Jun 01 21:47:28 2020
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off test -c test
 Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
@@ -831,8 +831,8 @@ Info: th for register "dda_module:inst|74373b:inst18|17" (data pin = "Data[5]", 
         Info: Total interconnect delay = 2.821 ns ( 57.96 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 41 warnings
     Info: Peak virtual memory: 191 megabytes
-    Info: Processing ended: Tue Dec 24 17:27:42 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Mon Jun 01 21:47:30 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

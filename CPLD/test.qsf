@@ -99,10 +99,10 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE test_xuat_xung.vwf
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name VECTOR_WAVEFORM_FILE test.vwf
-set_location_assignment PIN_17 -to LS0
-set_location_assignment PIN_16 -to LS1
-set_location_assignment PIN_15 -to LS2
-set_location_assignment PIN_8 -to LS3
+set_location_assignment PIN_15 -to LS0
+set_location_assignment PIN_8 -to LS1
+set_location_assignment PIN_17 -to LS2
+set_location_assignment PIN_16 -to LS3
 set_location_assignment PIN_68 -to LIMIT
 set_location_assignment PIN_2 -to ENC_1_A
 set_location_assignment PIN_3 -to ENC_1_B
@@ -112,3 +112,4 @@ set_location_assignment PIN_6 -to ENC_3_A
 set_location_assignment PIN_7 -to ENC_3_B
 set_location_assignment PIN_85 -to Data[9]
 set_location_assignment PIN_61 -to STOP
+set_global_assignment -name MISC_FILE "F:/THESIS/SOURCE/robot_CPLD/CPLD/test.dpf"

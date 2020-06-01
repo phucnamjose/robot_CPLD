@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test
-Tue Dec 24 17:27:35 2019
+Mon Jun 01 21:47:20 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -49,7 +49,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Dec 24 17:27:35 2019        ;
+; Analysis & Synthesis Status ; Successful - Mon Jun 01 21:47:20 2020        ;
 ; Quartus II Version          ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name               ; test                                         ;
 ; Top-level Entity Name       ; xuat_xung                                    ;
@@ -143,9 +143,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                 ;
 +----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------+
-; xuat_xung.bdf                    ; yes             ; User Block Diagram/Schematic File        ; F:/THESIS/FPGA/fpga/CPLD/xuat_xung.bdf                       ;
-; test.v                           ; yes             ; User Verilog HDL File                    ; F:/THESIS/FPGA/fpga/CPLD/test.v                              ;
-; dda_module.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/THESIS/FPGA/fpga/CPLD/dda_module.bdf                      ;
+; xuat_xung.bdf                    ; yes             ; User Block Diagram/Schematic File        ; F:/THESIS/SOURCE/robot_CPLD/CPLD/xuat_xung.bdf               ;
+; test.v                           ; yes             ; User Verilog HDL File                    ; F:/THESIS/SOURCE/robot_CPLD/CPLD/test.v                      ;
+; dda_module.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/THESIS/SOURCE/robot_CPLD/CPLD/dda_module.bdf              ;
 ; 74373b.bdf                       ; yes             ; Megafunction                             ; c:/altera/91sp2/quartus/libraries/others/maxplus2/74373b.bdf ;
 ; 74138.bdf                        ; yes             ; Megafunction                             ; c:/altera/91sp2/quartus/libraries/others/maxplus2/74138.bdf  ;
 +----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------+
@@ -466,7 +466,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Dec 24 17:27:32 2019
+    Info: Processing started: Mon Jun 01 21:47:16 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
 Info: Found 1 design units, including 1 entities, in source file xuat_xung.bdf
     Info: Found entity 1: xuat_xung
@@ -588,17 +588,17 @@ Info: Implemented 300 device resources after synthesis - the final resource coun
     Info: Implemented 10 output pins
     Info: Implemented 16 bidirectional pins
     Info: Implemented 258 logic cells
-Info: Generated suppressed messages file F:/THESIS/FPGA/fpga/CPLD/test.map.smsg
+Info: Generated suppressed messages file F:/THESIS/SOURCE/robot_CPLD/CPLD/test.map.smsg
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 91 warnings
     Info: Peak virtual memory: 230 megabytes
-    Info: Processing ended: Tue Dec 24 17:27:35 2019
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Processing ended: Mon Jun 01 21:47:20 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in F:/THESIS/FPGA/fpga/CPLD/test.map.smsg.
+The suppressed messages can be found in F:/THESIS/SOURCE/robot_CPLD/CPLD/test.map.smsg.
 
 
