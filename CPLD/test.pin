@@ -132,15 +132,15 @@ GND*                         : 64        :        :                   :         
 GNDINT                       : 65        : gnd    :                   :         :           :                
 NWE                          : 66        : input  : 3.3-V LVTTL       :         : 2         : Y              
 NOE                          : 67        : input  : 3.3-V LVTTL       :         : 2         : Y              
-LIMIT                        : 68        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 68        :        :                   :         : 2         :                
 GND*                         : 69        :        :                   :         : 2         :                
 Data[3]                      : 70        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 Data[2]                      : 71        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 Data[1]                      : 72        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 Data[0]                      : 73        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-busy                         : 74        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 74        :        :                   :         : 2         :                
 PULSE_WR                     : 75        : input  : 3.3-V LVTTL       :         : 2         : Y              
-GND*                         : 76        :        :                   :         : 2         :                
+ENCODER_RESET                : 76        : input  : 3.3-V LVTTL       :         : 2         : Y              
 Data[15]                     : 77        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 Data[14]                     : 78        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 GNDIO                        : 79        : gnd    :                   :         :           :                

@@ -16,7 +16,7 @@ parameter Nmax2 = 100;
 reg [7:0] Ntemp;
 reg [10:0] acc = Nmax1;
 
-reg [10:0] clk_cnt;
+reg [7:0] clk_cnt;
 reg [10:0] clk_20cnt;
 reg clk20u;
 reg temp;

@@ -1,10 +1,17 @@
 |xuat_xung
-busy <= dda_module:inst.BUSY
+pulse1 <= dda_module:inst.PULSE2
 PULSE_WR => dda_module:inst.PULSE_WR
 NADV => inst4.IN0
+Data[0] <> 74244:inst7.1Y1
+Data[1] <> 74244:inst7.1Y2
+Data[2] <> 74244:inst7.1Y3
+Data[3] <> 74244:inst7.1Y4
+Data[4] <> 74244:inst7.2Y1
+Data[5] <> 74244:inst7.2Y2
+Data[6] <> 74244:inst7.2Y3
+Data[7] <> 74244:inst7.2Y4
 NWE => dda_module:inst.WR
 CLK => dda_module:inst.CLK
-pulse1 <= dda_module:inst.PULSE2
 pulse2 <= dda_module:inst.PULSE3
 pulse3 <= dda_module:inst.PULSE4
 pulse0 <= dda_module:inst.PULSE1
@@ -12,19 +19,19 @@ dir0 <= dda_module:inst.DIR1
 dir1 <= dda_module:inst.DIR2
 dir2 <= dda_module:inst.DIR3
 dir3 <= dda_module:inst.DIR4
-LIMIT <= <GND>
-NOE => ~NO_FANOUT~
+LS1 => 74244:inst7.1A2
+LS3 => inst3.IN0
+LS0 => 74244:inst7.1A1
+LS2 => 74244:inst7.1A3
+NOE => inst8.IN0
 STOP => ~NO_FANOUT~
-LS0 => ~NO_FANOUT~
-LS1 => ~NO_FANOUT~
-LS2 => ~NO_FANOUT~
-LS3 => ~NO_FANOUT~
 ENC_1_A => ~NO_FANOUT~
 ENC_1_B => ~NO_FANOUT~
 ENC_2_A => ~NO_FANOUT~
 ENC_2_B => ~NO_FANOUT~
 ENC_3_A => ~NO_FANOUT~
 ENC_3_B => ~NO_FANOUT~
+ENCODER_RESET => ~NO_FANOUT~
 
 
 |xuat_xung|dda_module:inst
@@ -133,9 +140,6 @@ clk => clk_cnt[4].CLK
 clk => clk_cnt[5].CLK
 clk => clk_cnt[6].CLK
 clk => clk_cnt[7].CLK
-clk => clk_cnt[8].CLK
-clk => clk_cnt[9].CLK
-clk => clk_cnt[10].CLK
 clk => busy~reg0.CLK
 clk => dir~reg0.CLK
 clk => Ntemp[0].CLK
@@ -240,9 +244,6 @@ clk => clk_cnt[4].CLK
 clk => clk_cnt[5].CLK
 clk => clk_cnt[6].CLK
 clk => clk_cnt[7].CLK
-clk => clk_cnt[8].CLK
-clk => clk_cnt[9].CLK
-clk => clk_cnt[10].CLK
 clk => busy~reg0.CLK
 clk => dir~reg0.CLK
 clk => Ntemp[0].CLK
@@ -330,9 +331,6 @@ clk => clk_cnt[4].CLK
 clk => clk_cnt[5].CLK
 clk => clk_cnt[6].CLK
 clk => clk_cnt[7].CLK
-clk => clk_cnt[8].CLK
-clk => clk_cnt[9].CLK
-clk => clk_cnt[10].CLK
 clk => busy~reg0.CLK
 clk => dir~reg0.CLK
 clk => Ntemp[0].CLK
@@ -420,9 +418,6 @@ clk => clk_cnt[4].CLK
 clk => clk_cnt[5].CLK
 clk => clk_cnt[6].CLK
 clk => clk_cnt[7].CLK
-clk => clk_cnt[8].CLK
-clk => clk_cnt[9].CLK
-clk => clk_cnt[10].CLK
 clk => busy~reg0.CLK
 clk => dir~reg0.CLK
 clk => Ntemp[0].CLK
@@ -510,5 +505,26 @@ Q2 <= 68.DB_MAX_OUTPUT_PORT_TYPE
 D2 => 13.DATAIN
 Q1 <= 67.DB_MAX_OUTPUT_PORT_TYPE
 D1 => 12.DATAIN
+
+
+|xuat_xung|74244:inst7
+2Y4 <= 26.DB_MAX_OUTPUT_PORT_TYPE
+2A4 => 26.DATAIN
+2GN => 33.IN0
+2Y3 <= 27.DB_MAX_OUTPUT_PORT_TYPE
+2A3 => 27.DATAIN
+2Y2 <= 31.DB_MAX_OUTPUT_PORT_TYPE
+2A2 => 31.DATAIN
+2Y1 <= 36.DB_MAX_OUTPUT_PORT_TYPE
+2A1 => 36.DATAIN
+1Y1 <= 1.DB_MAX_OUTPUT_PORT_TYPE
+1A1 => 1.DATAIN
+1GN => 4.IN0
+1Y2 <= 6.DB_MAX_OUTPUT_PORT_TYPE
+1A2 => 6.DATAIN
+1Y3 <= 10.DB_MAX_OUTPUT_PORT_TYPE
+1A3 => 10.DATAIN
+1Y4 <= 11.DB_MAX_OUTPUT_PORT_TYPE
+1A4 => 11.DATAIN
 
 

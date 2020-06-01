@@ -90,7 +90,6 @@ set_location_assignment PIN_81 -to Data[13]
 set_location_assignment PIN_78 -to Data[14]
 set_location_assignment PIN_77 -to Data[15]
 set_location_assignment PIN_67 -to NOE
-set_location_assignment PIN_76 -to ENC_RST
 set_global_assignment -name QIP_FILE lpm_counter0.qip
 set_global_assignment -name MISC_FILE "D:/Works/git/HexapodThesis/CPLD/test.dpf"
 set_global_assignment -name MISC_FILE "D:/ROBOTTEAM/robotic-lspb-control-step-motor/fpga/CPLD/test.dpf"
@@ -104,12 +103,13 @@ set_location_assignment PIN_8 -to LS1
 set_location_assignment PIN_17 -to LS2
 set_location_assignment PIN_16 -to LS3
 set_location_assignment PIN_68 -to LIMIT
-set_location_assignment PIN_2 -to ENC_1_A
-set_location_assignment PIN_3 -to ENC_1_B
-set_location_assignment PIN_4 -to ENC_2_A
-set_location_assignment PIN_5 -to ENC_2_B
-set_location_assignment PIN_6 -to ENC_3_A
-set_location_assignment PIN_7 -to ENC_3_B
+set_location_assignment PIN_3 -to ENC_1_A
+set_location_assignment PIN_2 -to ENC_1_B
+set_location_assignment PIN_5 -to ENC_2_A
+set_location_assignment PIN_4 -to ENC_2_B
+set_location_assignment PIN_7 -to ENC_3_A
+set_location_assignment PIN_6 -to ENC_3_B
 set_location_assignment PIN_85 -to Data[9]
 set_location_assignment PIN_61 -to STOP
 set_global_assignment -name MISC_FILE "F:/THESIS/SOURCE/robot_CPLD/CPLD/test.dpf"
+set_location_assignment PIN_76 -to ENCODER_RESET

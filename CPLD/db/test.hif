@@ -317,21 +317,21 @@ dda_module:inst|74138:inst41
 
 # end
 # entity
-xuat_xung
+dda_module
 # storage
-db|test.(0).cnf
-db|test.(0).cnf
+db|test.(3).cnf
+db|test.(3).cnf
 # case_insensitive
 # source_file
-xuat_xung.bdf
-65a25bcefcc9a44892a2b0278a93b9fd
+dda_module.bdf
+8df0a2ff11c0a6a58cdd67261198d5ff
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-|
+dda_module:inst
 }
 # macro_sequence
 
@@ -348,54 +348,7 @@ ON
 # case_sensitive
 # source_file
 test.v
-4beee8482cac8331ec87e6db5d87dff3
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-Nmax
-50
-PARAMETER_SIGNED_DEC
-USR
-Nmax1
-48
-PARAMETER_SIGNED_DEC
-USR
-Nmax2
-100
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-test
-# storage
-db|test.(7).cnf
-db|test.(7).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-test.v
-4beee8482cac8331ec87e6db5d87dff3
+44e8e711766c57b54d9ca9edc78926d4
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -437,21 +390,41 @@ dda_module:inst|test:inst11
 
 # end
 # entity
-dda_module
+74244
 # storage
-db|test.(3).cnf
-db|test.(3).cnf
+db|test.(7).cnf
+db|test.(7).cnf
 # case_insensitive
 # source_file
-dda_module.bdf
-8df0a2ff11c0a6a58cdd67261198d5ff
+c:|altera|91sp2|quartus|libraries|others|maxplus2|74244.bdf
+df39bb927be3b52e95d545d3ad2ffbe4
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-dda_module:inst
+74244:inst7
+}
+# macro_sequence
+
+# end
+# entity
+xuat_xung
+# storage
+db|test.(0).cnf
+db|test.(0).cnf
+# case_insensitive
+# source_file
+xuat_xung.bdf
+44433d676bc1bdf2d848d37f6fb0befb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 
