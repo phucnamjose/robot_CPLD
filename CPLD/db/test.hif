@@ -317,79 +317,6 @@ dda_module:inst|74138:inst41
 
 # end
 # entity
-dda_module
-# storage
-db|test.(3).cnf
-db|test.(3).cnf
-# case_insensitive
-# source_file
-dda_module.bdf
-8df0a2ff11c0a6a58cdd67261198d5ff
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-dda_module:inst
-}
-# macro_sequence
-
-# end
-# entity
-test
-# storage
-db|test.(1).cnf
-db|test.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-test.v
-44e8e711766c57b54d9ca9edc78926d4
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-Nmax
-500
-PARAMETER_SIGNED_DEC
-USR
-Nmax1
-498
-PARAMETER_SIGNED_DEC
-USR
-Nmax2
-100
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-dda_module:inst|test:inst
-dda_module:inst|test:inst4
-dda_module:inst|test:inst5
-dda_module:inst|test:inst11
-}
-# macro_sequence
-
-# end
-# entity
 74244
 # storage
 db|test.(7).cnf
@@ -410,6 +337,26 @@ AUTO
 
 # end
 # entity
+dda_module
+# storage
+db|test.(1).cnf
+db|test.(1).cnf
+# case_insensitive
+# source_file
+dda_module.bdf
+a85a26cdf3a9fd6e1c888a73d11e37f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+dda_module:inst
+}
+# macro_sequence
+
+# end
+# entity
 xuat_xung
 # storage
 db|test.(0).cnf
@@ -417,7 +364,7 @@ db|test.(0).cnf
 # case_insensitive
 # source_file
 xuat_xung.bdf
-44433d676bc1bdf2d848d37f6fb0befb
+7ac593da728b527bd15c7810eaebf
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -425,6 +372,51 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+test
+# storage
+db|test.(3).cnf
+db|test.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+test.v
+b3279e9880fadcbfe520842abc1411
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+Nmax
+250
+PARAMETER_UNSIGNED_DEC
+USR
+}
+# hierarchies {
+dda_module:inst|test:inst
+dda_module:inst|test:inst4
+dda_module:inst|test:inst5
+dda_module:inst|test:inst11
 }
 # macro_sequence
 

@@ -67,17 +67,7 @@ applicable agreement for further details.
 	)
 	(parameter
 		"Nmax"
-		"500"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"Nmax1"
-		"498"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"Nmax2"
-		"100"
+		"250"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing

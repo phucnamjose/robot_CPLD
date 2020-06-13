@@ -7,88 +7,67 @@ input clk;
 output reg pulse;
 output reg dir;
 output reg busy;
-
 // phan anh khai
-parameter Nmax  = 500;	// chu ky dieu khien 1ms, xung 20us -> Nmax = 499
-parameter Nmax1 = 498;	// tre 1 chu ky -> so xung max xuat ra 498
-parameter Nmax2 = 100;
+parameter Nmax  = 250;	// chu ky dieu khien 1ms, xung 40us -> Nmax = 250
 
-reg [7:0] Ntemp;
-reg [10:0] acc = Nmax1;
+reg [7:0] Ntemp = 8'b0;
+reg [10:0] acc = Nmax;
 
-reg [7:0] clk_cnt;
-reg [10:0] clk_20cnt;
-reg clk20u;
-reg temp;
+reg [8:0] clk_cnt = 0;
+reg [10:0] clk_20cnt = 0;
+reg clk20u = 0;
 
-//reg dirtemp;
-reg pre_WR;
+reg pre_WR = 0;
 
 initial begin
 pulse = 0;
-dir = 0;
-busy = 0;
 Ntemp = 0;
 clk_cnt = 0;
 clk_20cnt = 0;
 clk20u = 0;
 pre_WR = 0;
-temp = 0;
+busy = 0;
 end
 
-always @(posedge clk )  begin
-	pre_WR <= WR;
-	
-  	if ({pre_WR,WR} == 2'b01) // neu co xung WR nap gia tri moi
-	begin				
-		Ntemp = N[6:0];
-		//dirtemp = N[7];
-		dir = N[7];
-		busy = 1;
-		clk_cnt = 0;
-		clk_20cnt = 0;
-		clk20u = 0;		
-		acc = Nmax1; //Nmax1 = 498
-		pulse = 0;
-	end		
-	else 
-	begin
-		if (clk_cnt < 199)//update every 1/20M = 50ns x 200 = 10us = chieu dai xung duong / chu ki xung
-			clk_cnt = clk_cnt + 1;
-		else 
-		begin 
-			//dir = dirtemp;
+always @(posedge clk)  begin	
+  	if ({pre_WR,WR} == 2'b00) // neu co xung WR nap gia tri moi
+		begin				
+			Ntemp = N[6:0];
+			dir = N[7];
 			clk_cnt = 0;
-			if (clk_20cnt < 999)// (Nmax2-2)) //Nmax2 = 100
-				begin 
-				clk_20cnt = clk_20cnt + 1;
-				clk20u = !clk20u;
-				if (clk20u) 
-				begin
-					acc = acc + Ntemp; //Ntemp = 50, acc = Nmax1 = 49
-					if (acc >= Nmax) begin //Nmax = 50
-						acc = acc - Nmax;
-						pulse = 1;
-					end		
-					else pulse = 0;
-				end
-				else pulse = 0;
-				
-				end
+			clk_20cnt = 0;
+			clk20u = 0;		
+			acc = Nmax;
+			pulse = 0;
+			busy = 1;
+		end		
+	else 
+		begin
+			if (clk_cnt < 399)//update every 1/20M = 50ns x 400 = 20us = chieu dai xung duong / chu ki xung
+				clk_cnt = clk_cnt + 1;
 			else 
-//				begin 
-//				if (Ntemp <=50)
-//			
-//					begin
-//					Ntemp = Ntemp +1;
-//					clk20u_cnt = 0;
-//					end
-//					
-//				else
-					busy = 0;	
-
-//				end
+				begin 
+					clk_cnt = 0;
+					if (clk_20cnt < 499)// 20us x 500 = 10ms
+						begin 
+							clk_20cnt = clk_20cnt + 1;
+							clk20u = !clk20u;
+							if (clk20u) 
+								begin
+									acc = acc + Ntemp;
+									if (acc > Nmax) 
+										begin
+											acc = acc - Nmax;
+											pulse = 1;
+										end		
+								end
+							else 
+								pulse = 0;
+						end
+					else
+						busy = 0;
+				end
 		end
-	end
+	pre_WR <= WR;
 end				
 endmodule

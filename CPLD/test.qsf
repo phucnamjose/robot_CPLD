@@ -69,7 +69,7 @@ set_location_assignment PIN_49 -to dir2
 set_location_assignment PIN_50 -to pulse2
 set_location_assignment PIN_55 -to dir3
 set_location_assignment PIN_56 -to pulse3
-set_location_assignment PIN_74 -to busy
+set_location_assignment PIN_69 -to busy
 set_global_assignment -name MISC_FILE "C:/Users/anhkh/OneDrive/Máy tính/xuat xung/CPLD/test.dpf"
 set_location_assignment PIN_57 -to NADV
 set_location_assignment PIN_54 -to pulse0
@@ -113,3 +113,4 @@ set_location_assignment PIN_85 -to Data[9]
 set_location_assignment PIN_61 -to STOP
 set_global_assignment -name MISC_FILE "F:/THESIS/SOURCE/robot_CPLD/CPLD/test.dpf"
 set_location_assignment PIN_76 -to ENCODER_RESET
+set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to PULSE_WR
