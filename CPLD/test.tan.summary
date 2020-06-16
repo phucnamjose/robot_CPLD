@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.276 ns
+Actual Time    : 7.971 ns
 From           : PULSE_WR
-To             : dda_module:inst|test:inst5|acc[10]
+To             : dda_module:inst|test:inst4|pulse
 From Clock     : --
 To Clock       : CLK
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 11.609 ns
+Actual Time    : 11.241 ns
 From           : 74373b:inst1|16
-To             : Data[5]
+To             : Data[4]
 From Clock     : NADV
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.737 ns
+Actual Time    : 9.224 ns
 From           : NOE
-To             : Data[5]
+To             : Data[4]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 12.321 ns
-From           : Data[5]
-To             : dda_module:inst|74373b:inst7|17
+Actual Time    : 9.221 ns
+From           : Data[4]
+To             : dda_module:inst|74373b:inst7|16
 From Clock     : --
 To Clock       : NADV
 Failed Paths   : 0
@@ -45,9 +45,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'CLK'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 62.00 MHz ( period = 16.130 ns )
-From           : dda_module:inst|test:inst4|Ntemp[2]
-To             : dda_module:inst|test:inst4|acc[9]
+Actual Time    : 67.36 MHz ( period = 14.846 ns )
+From           : dda_module:inst|test:inst5|acc[3]
+To             : dda_module:inst|test:inst5|pulse
 From Clock     : CLK
 To Clock       : CLK
 Failed Paths   : 0

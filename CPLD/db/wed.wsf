@@ -6120,10 +6120,10 @@ VECTOR("F:/THESIS/SOURCE/CPLD/CPLD/db/test.sim.cvwf")
 VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/test.vwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 20000000000;
+		ZBEGIN = 9987066975;
+		ZEND = 10001108585;
 		NUMERATOR = 673;
-		DENOMINATOR = 20000000000;
+		DENOMINATOR = 14041610;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -7052,10 +7052,10 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 1082802548;
-		NUMERATOR = 942;
-		DENOMINATOR = 1082802548;
-		TOP_INDEX = 0;
+		ZEND = 2241579558;
+		NUMERATOR = 772;
+		DENOMINATOR = 2241579558;
+		TOP_INDEX = 58;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -7482,7 +7482,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dir0";
+		SIGNAL = "busy";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -7490,7 +7490,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "pulse0";
+		SIGNAL = "dir0";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -7498,7 +7498,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dir1";
+		SIGNAL = "pulse0";
 		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
@@ -7506,7 +7506,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "pulse1";
+		SIGNAL = "dir1";
 		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
@@ -7514,7 +7514,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dir2";
+		SIGNAL = "pulse1";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -7522,7 +7522,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "pulse2";
+		SIGNAL = "dir2";
 		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
@@ -7530,7 +7530,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dir3";
+		SIGNAL = "pulse2";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -7538,7 +7538,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "pulse3";
+		SIGNAL = "dir3";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -7546,7 +7546,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "CLK";
+		SIGNAL = "pulse3";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -7554,23 +7554,23 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc";
+		SIGNAL = "CLK";
 		INDEX = 61;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc[10]";
-		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc[9]";
+		SIGNAL = "dda_module:inst|test:inst|acc";
+		INDEX = 62;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "dda_module:inst|test:inst|acc[8]";
 		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
@@ -7578,7 +7578,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc[8]";
+		SIGNAL = "dda_module:inst|test:inst|acc[7]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -7586,7 +7586,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc[7]";
+		SIGNAL = "dda_module:inst|test:inst|acc[6]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -7594,7 +7594,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc[6]";
+		SIGNAL = "dda_module:inst|test:inst|acc[5]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -7602,7 +7602,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc[5]";
+		SIGNAL = "dda_module:inst|test:inst|acc[4]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
@@ -7610,7 +7610,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc[4]";
+		SIGNAL = "dda_module:inst|test:inst|acc[3]";
 		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
@@ -7618,7 +7618,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc[3]";
+		SIGNAL = "dda_module:inst|test:inst|acc[2]";
 		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
@@ -7626,7 +7626,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc[2]";
+		SIGNAL = "dda_module:inst|test:inst|acc[1]";
 		INDEX = 70;
 		FORMAT = E;
 		SCALE = 1;
@@ -7634,7 +7634,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc[1]";
+		SIGNAL = "dda_module:inst|test:inst|acc[0]";
 		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
@@ -7642,40 +7642,16 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst|acc[0]";
-		INDEX = 72;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "dda_module:inst|test:inst4|acc";
-		INDEX = 73;
+		INDEX = 72;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst4|acc[10]";
-		INDEX = 74;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dda_module:inst|test:inst4|acc[9]";
-		INDEX = 75;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "dda_module:inst|test:inst4|acc[8]";
-		INDEX = 76;
+		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7683,7 +7659,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst4|acc[7]";
-		INDEX = 77;
+		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7691,7 +7667,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst4|acc[6]";
-		INDEX = 78;
+		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7699,7 +7675,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst4|acc[5]";
-		INDEX = 79;
+		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7707,7 +7683,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst4|acc[4]";
-		INDEX = 80;
+		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7715,7 +7691,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst4|acc[3]";
-		INDEX = 81;
+		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7723,7 +7699,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst4|acc[2]";
-		INDEX = 82;
+		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7731,7 +7707,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst4|acc[1]";
-		INDEX = 83;
+		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7739,7 +7715,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst4|acc[0]";
-		INDEX = 84;
+		INDEX = 81;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7747,31 +7723,15 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst5|acc";
-		INDEX = 85;
+		INDEX = 82;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst5|acc[10]";
-		INDEX = 86;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dda_module:inst|test:inst5|acc[9]";
-		INDEX = 87;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "dda_module:inst|test:inst5|acc[8]";
-		INDEX = 88;
+		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7779,7 +7739,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst5|acc[7]";
-		INDEX = 89;
+		INDEX = 84;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7787,7 +7747,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst5|acc[6]";
-		INDEX = 90;
+		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7795,7 +7755,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst5|acc[5]";
-		INDEX = 91;
+		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7803,7 +7763,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst5|acc[4]";
-		INDEX = 92;
+		INDEX = 87;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7811,7 +7771,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst5|acc[3]";
-		INDEX = 93;
+		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7819,7 +7779,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst5|acc[2]";
-		INDEX = 94;
+		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7827,7 +7787,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst5|acc[1]";
-		INDEX = 95;
+		INDEX = 90;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7835,7 +7795,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst5|acc[0]";
-		INDEX = 96;
+		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7843,31 +7803,15 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst11|acc";
-		INDEX = 97;
+		INDEX = 92;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dda_module:inst|test:inst11|acc[10]";
-		INDEX = 98;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dda_module:inst|test:inst11|acc[9]";
-		INDEX = 99;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "dda_module:inst|test:inst11|acc[8]";
-		INDEX = 100;
+		INDEX = 93;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7875,7 +7819,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst11|acc[7]";
-		INDEX = 101;
+		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7883,7 +7827,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst11|acc[6]";
-		INDEX = 102;
+		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7891,7 +7835,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst11|acc[5]";
-		INDEX = 103;
+		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7899,7 +7843,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst11|acc[4]";
-		INDEX = 104;
+		INDEX = 97;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7907,7 +7851,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst11|acc[3]";
-		INDEX = 105;
+		INDEX = 98;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7915,7 +7859,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst11|acc[2]";
-		INDEX = 106;
+		INDEX = 99;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7923,7 +7867,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst11|acc[1]";
-		INDEX = 107;
+		INDEX = 100;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7931,7 +7875,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "dda_module:inst|test:inst11|acc[0]";
-		INDEX = 108;
+		INDEX = 101;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7939,7 +7883,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[15]~result";
-		INDEX = 109;
+		INDEX = 102;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7947,7 +7891,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[14]~result";
-		INDEX = 110;
+		INDEX = 103;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7955,7 +7899,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[13]~result";
-		INDEX = 111;
+		INDEX = 104;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7963,7 +7907,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[12]~result";
-		INDEX = 112;
+		INDEX = 105;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7971,7 +7915,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[11]~result";
-		INDEX = 113;
+		INDEX = 106;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7979,7 +7923,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[10]~result";
-		INDEX = 114;
+		INDEX = 107;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7987,7 +7931,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[9]~result";
-		INDEX = 115;
+		INDEX = 108;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -7995,7 +7939,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[8]~result";
-		INDEX = 116;
+		INDEX = 109;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -8003,7 +7947,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[7]~result";
-		INDEX = 117;
+		INDEX = 110;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -8011,7 +7955,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[6]~result";
-		INDEX = 118;
+		INDEX = 111;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -8019,7 +7963,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[5]~result";
-		INDEX = 119;
+		INDEX = 112;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -8027,7 +7971,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[4]~result";
-		INDEX = 120;
+		INDEX = 113;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -8035,7 +7979,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[3]~result";
-		INDEX = 121;
+		INDEX = 114;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -8043,7 +7987,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[2]~result";
-		INDEX = 122;
+		INDEX = 115;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -8051,7 +7995,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[1]~result";
-		INDEX = 123;
+		INDEX = 116;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -8059,7 +8003,7 @@ VECTOR("F:/THESIS/SOURCE/robot_CPLD/CPLD/db/test.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Data[0]~result";
-		INDEX = 124;
+		INDEX = 117;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

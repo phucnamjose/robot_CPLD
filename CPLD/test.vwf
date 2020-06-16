@@ -1228,11 +1228,9 @@ TRANSITION_LIST("PULSE_WR")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 7040.0;
-		LEVEL 1 FOR 960.0;
-		LEVEL 0 FOR 9993440.0;
-		LEVEL 1 FOR 1440.0;
-		LEVEL 0 FOR 9997120.0;
+		LEVEL 1 FOR 7680.0;
+		LEVEL 0 FOR 3200.0;
+		LEVEL 1 FOR 19989120.0;
 	}
 }
 
@@ -1350,8 +1348,7 @@ TRANSITION_LIST("Data[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10000000.0;
-		LEVEL 1 FOR 10000000.0;
+		LEVEL 0 FOR 20000000.0;
 	}
 }
 
@@ -1371,8 +1368,7 @@ TRANSITION_LIST("Data[1]")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 5120.0;
-		LEVEL 0 FOR 9994880.0;
-		LEVEL 1 FOR 10000000.0;
+		LEVEL 0 FOR 19994880.0;
 	}
 }
 
@@ -2789,7 +2785,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 66;
 	TREE_LEVEL = 0;
 	CHILDREN = 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77;
@@ -2799,7 +2795,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc[10]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 67;
 	TREE_LEVEL = 1;
 	PARENT = 66;
@@ -2809,7 +2805,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc[9]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 68;
 	TREE_LEVEL = 1;
 	PARENT = 66;
@@ -2819,7 +2815,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc[8]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 69;
 	TREE_LEVEL = 1;
 	PARENT = 66;
@@ -2829,7 +2825,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 70;
 	TREE_LEVEL = 1;
 	PARENT = 66;
@@ -2839,7 +2835,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 71;
 	TREE_LEVEL = 1;
 	PARENT = 66;
@@ -2849,7 +2845,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 72;
 	TREE_LEVEL = 1;
 	PARENT = 66;
@@ -2859,7 +2855,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 73;
 	TREE_LEVEL = 1;
 	PARENT = 66;
@@ -2869,7 +2865,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 74;
 	TREE_LEVEL = 1;
 	PARENT = 66;
@@ -2879,7 +2875,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 75;
 	TREE_LEVEL = 1;
 	PARENT = 66;
@@ -2889,7 +2885,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 76;
 	TREE_LEVEL = 1;
 	PARENT = 66;
@@ -2899,7 +2895,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst|acc[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 77;
 	TREE_LEVEL = 1;
 	PARENT = 66;
@@ -2909,7 +2905,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 78;
 	TREE_LEVEL = 0;
 	CHILDREN = 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89;
@@ -2919,7 +2915,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc[10]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 79;
 	TREE_LEVEL = 1;
 	PARENT = 78;
@@ -2929,7 +2925,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc[9]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 80;
 	TREE_LEVEL = 1;
 	PARENT = 78;
@@ -2939,7 +2935,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc[8]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 81;
 	TREE_LEVEL = 1;
 	PARENT = 78;
@@ -2949,7 +2945,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 82;
 	TREE_LEVEL = 1;
 	PARENT = 78;
@@ -2959,7 +2955,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 83;
 	TREE_LEVEL = 1;
 	PARENT = 78;
@@ -2969,7 +2965,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 84;
 	TREE_LEVEL = 1;
 	PARENT = 78;
@@ -2979,7 +2975,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 85;
 	TREE_LEVEL = 1;
 	PARENT = 78;
@@ -2989,7 +2985,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 86;
 	TREE_LEVEL = 1;
 	PARENT = 78;
@@ -2999,7 +2995,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 87;
 	TREE_LEVEL = 1;
 	PARENT = 78;
@@ -3009,7 +3005,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 88;
 	TREE_LEVEL = 1;
 	PARENT = 78;
@@ -3019,7 +3015,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst4|acc[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 89;
 	TREE_LEVEL = 1;
 	PARENT = 78;
@@ -3029,7 +3025,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 90;
 	TREE_LEVEL = 0;
 	CHILDREN = 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101;
@@ -3039,7 +3035,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc[10]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 91;
 	TREE_LEVEL = 1;
 	PARENT = 90;
@@ -3049,7 +3045,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc[9]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 92;
 	TREE_LEVEL = 1;
 	PARENT = 90;
@@ -3059,7 +3055,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc[8]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 93;
 	TREE_LEVEL = 1;
 	PARENT = 90;
@@ -3069,7 +3065,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 94;
 	TREE_LEVEL = 1;
 	PARENT = 90;
@@ -3079,7 +3075,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 95;
 	TREE_LEVEL = 1;
 	PARENT = 90;
@@ -3089,7 +3085,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 96;
 	TREE_LEVEL = 1;
 	PARENT = 90;
@@ -3099,7 +3095,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 97;
 	TREE_LEVEL = 1;
 	PARENT = 90;
@@ -3109,7 +3105,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 98;
 	TREE_LEVEL = 1;
 	PARENT = 90;
@@ -3119,7 +3115,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 99;
 	TREE_LEVEL = 1;
 	PARENT = 90;
@@ -3129,7 +3125,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 100;
 	TREE_LEVEL = 1;
 	PARENT = 90;
@@ -3139,7 +3135,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst5|acc[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 101;
 	TREE_LEVEL = 1;
 	PARENT = 90;
@@ -3149,7 +3145,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 102;
 	TREE_LEVEL = 0;
 	CHILDREN = 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113;
@@ -3159,7 +3155,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc[10]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 103;
 	TREE_LEVEL = 1;
 	PARENT = 102;
@@ -3169,7 +3165,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc[9]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 104;
 	TREE_LEVEL = 1;
 	PARENT = 102;
@@ -3179,7 +3175,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc[8]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 105;
 	TREE_LEVEL = 1;
 	PARENT = 102;
@@ -3189,7 +3185,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 106;
 	TREE_LEVEL = 1;
 	PARENT = 102;
@@ -3199,7 +3195,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 107;
 	TREE_LEVEL = 1;
 	PARENT = 102;
@@ -3209,7 +3205,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 108;
 	TREE_LEVEL = 1;
 	PARENT = 102;
@@ -3219,7 +3215,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 109;
 	TREE_LEVEL = 1;
 	PARENT = 102;
@@ -3229,7 +3225,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 110;
 	TREE_LEVEL = 1;
 	PARENT = 102;
@@ -3239,7 +3235,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 111;
 	TREE_LEVEL = 1;
 	PARENT = 102;
@@ -3249,7 +3245,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 112;
 	TREE_LEVEL = 1;
 	PARENT = 102;
@@ -3259,7 +3255,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "dda_module:inst|test:inst11|acc[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Signed;
 	TREE_INDEX = 113;
 	TREE_LEVEL = 1;
 	PARENT = 102;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test
-Sat Jun 13 16:10:34 2020
+Tue Jun 16 17:10:21 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -49,12 +49,12 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                               ;
 +-----------------------------+----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Jun 13 16:10:34 2020        ;
+; Analysis & Synthesis Status ; Successful - Tue Jun 16 17:10:21 2020        ;
 ; Quartus II Version          ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name               ; test                                         ;
 ; Top-level Entity Name       ; xuat_xung                                    ;
 ; Family                      ; MAX II                                       ;
-; Total logic elements        ; 273                                          ;
+; Total logic elements        ; 236                                          ;
 ; Total pins                  ; 42                                           ;
 ; Total virtual pins          ; 0                                            ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                ;
@@ -157,33 +157,33 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 273   ;
-;     -- Combinational with no register       ; 171   ;
+; Total logic elements                        ; 236   ;
+;     -- Combinational with no register       ; 144   ;
 ;     -- Register only                        ; 33    ;
-;     -- Combinational with a register        ; 69    ;
+;     -- Combinational with a register        ; 59    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 67    ;
-;     -- 3 input functions                    ; 87    ;
-;     -- 2 input functions                    ; 81    ;
+;     -- 4 input functions                    ; 59    ;
+;     -- 3 input functions                    ; 81    ;
+;     -- 2 input functions                    ; 58    ;
 ;     -- 1 input functions                    ; 5     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 179   ;
-;     -- arithmetic mode                      ; 94    ;
+;     -- normal mode                          ; 160   ;
+;     -- arithmetic mode                      ; 76    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
-;     -- synchronous clear/load mode          ; 26    ;
+;     -- synchronous clear/load mode          ; 9     ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 102   ;
-; Total logic cells in carry chains           ; 104   ;
+; Total registers                             ; 92    ;
+; Total logic cells in carry chains           ; 86    ;
 ; I/O pins                                    ; 42    ;
 ; Maximum fan-out node                        ; CLK   ;
-; Maximum fan-out                             ; 102   ;
-; Total fan-out                               ; 964   ;
-; Average fan-out                             ; 3.06  ;
+; Maximum fan-out                             ; 92    ;
+; Total fan-out                               ; 831   ;
+; Average fan-out                             ; 2.99  ;
 +---------------------------------------------+-------+
 
 
@@ -192,17 +192,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                      ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------+--------------+
-; |xuat_xung                 ; 273 (1)     ; 102          ; 0          ; 42   ; 0            ; 171 (1)      ; 33 (0)            ; 69 (0)           ; 104 (0)         ; 0 (0)      ; |xuat_xung                               ; work         ;
+; |xuat_xung                 ; 236 (1)     ; 92           ; 0          ; 42   ; 0            ; 144 (1)      ; 33 (0)            ; 59 (0)           ; 86 (0)          ; 0 (0)      ; |xuat_xung                               ; work         ;
 ;    |74373b:inst1|          ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |xuat_xung|74373b:inst1                  ; work         ;
-;    |dda_module:inst|       ; 266 (5)     ; 102          ; 0          ; 0    ; 0            ; 164 (5)      ; 33 (0)            ; 69 (0)           ; 104 (0)         ; 0 (0)      ; |xuat_xung|dda_module:inst               ; work         ;
+;    |dda_module:inst|       ; 229 (5)     ; 92           ; 0          ; 0    ; 0            ; 137 (5)      ; 33 (0)            ; 59 (0)           ; 86 (0)          ; 0 (0)      ; |xuat_xung|dda_module:inst               ; work         ;
 ;       |74373b:inst18|      ; 8 (8)       ; 0            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |xuat_xung|dda_module:inst|74373b:inst18 ; work         ;
 ;       |74373b:inst20|      ; 8 (8)       ; 0            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |xuat_xung|dda_module:inst|74373b:inst20 ; work         ;
 ;       |74373b:inst2|       ; 8 (8)       ; 0            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |xuat_xung|dda_module:inst|74373b:inst2  ; work         ;
 ;       |74373b:inst7|       ; 8 (8)       ; 0            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |xuat_xung|dda_module:inst|74373b:inst7  ; work         ;
-;       |test:inst11|        ; 80 (80)     ; 42           ; 0          ; 0    ; 0            ; 38 (38)      ; 9 (9)             ; 33 (33)          ; 41 (41)         ; 0 (0)      ; |xuat_xung|dda_module:inst|test:inst11   ; work         ;
-;       |test:inst4|         ; 57 (57)     ; 20           ; 0          ; 0    ; 0            ; 37 (37)      ; 8 (8)             ; 12 (12)          ; 21 (21)         ; 0 (0)      ; |xuat_xung|dda_module:inst|test:inst4    ; work         ;
-;       |test:inst5|         ; 46 (46)     ; 20           ; 0          ; 0    ; 0            ; 26 (26)      ; 8 (8)             ; 12 (12)          ; 21 (21)         ; 0 (0)      ; |xuat_xung|dda_module:inst|test:inst5    ; work         ;
-;       |test:inst|          ; 46 (46)     ; 20           ; 0          ; 0    ; 0            ; 26 (26)      ; 8 (8)             ; 12 (12)          ; 21 (21)         ; 0 (0)      ; |xuat_xung|dda_module:inst|test:inst     ; work         ;
+;       |test:inst11|        ; 68 (68)     ; 38           ; 0          ; 0    ; 0            ; 30 (30)      ; 9 (9)             ; 29 (29)          ; 35 (35)         ; 0 (0)      ; |xuat_xung|dda_module:inst|test:inst11   ; work         ;
+;       |test:inst4|         ; 48 (48)     ; 18           ; 0          ; 0    ; 0            ; 30 (30)      ; 8 (8)             ; 10 (10)          ; 17 (17)         ; 0 (0)      ; |xuat_xung|dda_module:inst|test:inst4    ; work         ;
+;       |test:inst5|         ; 38 (38)     ; 18           ; 0          ; 0    ; 0            ; 20 (20)      ; 8 (8)             ; 10 (10)          ; 17 (17)         ; 0 (0)      ; |xuat_xung|dda_module:inst|test:inst5    ; work         ;
+;       |test:inst|          ; 38 (38)     ; 18           ; 0          ; 0    ; 0            ; 20 (20)      ; 8 (8)             ; 10 (10)          ; 17 (17)         ; 0 (0)      ; |xuat_xung|dda_module:inst|test:inst     ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -255,87 +255,81 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+--------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                               ;
-+------------------------------------------+-------------------------------------------------------+
-; Register name                            ; Reason for Removal                                    ;
-+------------------------------------------+-------------------------------------------------------+
-; dda_module:inst|test:inst11|Ntemp[7]     ; Stuck at GND due to stuck port data_in                ;
-; dda_module:inst|test:inst5|Ntemp[7]      ; Stuck at GND due to stuck port data_in                ;
-; dda_module:inst|test:inst4|Ntemp[7]      ; Stuck at GND due to stuck port data_in                ;
-; dda_module:inst|test:inst|Ntemp[7]       ; Stuck at GND due to stuck port data_in                ;
-; dda_module:inst|test:inst|pre_WR         ; Merged with dda_module:inst|test:inst11|pre_WR        ;
-; dda_module:inst|test:inst4|pre_WR        ; Merged with dda_module:inst|test:inst11|pre_WR        ;
-; dda_module:inst|test:inst5|pre_WR        ; Merged with dda_module:inst|test:inst11|pre_WR        ;
-; dda_module:inst|test:inst4|busy          ; Merged with dda_module:inst|test:inst11|busy          ;
-; dda_module:inst|test:inst5|busy          ; Merged with dda_module:inst|test:inst11|busy          ;
-; dda_module:inst|test:inst|busy           ; Merged with dda_module:inst|test:inst11|busy          ;
-; dda_module:inst|test:inst4|clk20u        ; Merged with dda_module:inst|test:inst11|clk20u        ;
-; dda_module:inst|test:inst5|clk20u        ; Merged with dda_module:inst|test:inst11|clk20u        ;
-; dda_module:inst|test:inst|clk20u         ; Merged with dda_module:inst|test:inst11|clk20u        ;
-; dda_module:inst|test:inst4|clk_20cnt[0]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[0]  ;
-; dda_module:inst|test:inst5|clk_20cnt[0]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[0]  ;
-; dda_module:inst|test:inst|clk_20cnt[0]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[0]  ;
-; dda_module:inst|test:inst4|clk_20cnt[1]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[1]  ;
-; dda_module:inst|test:inst5|clk_20cnt[1]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[1]  ;
-; dda_module:inst|test:inst|clk_20cnt[1]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[1]  ;
-; dda_module:inst|test:inst4|clk_20cnt[2]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[2]  ;
-; dda_module:inst|test:inst5|clk_20cnt[2]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[2]  ;
-; dda_module:inst|test:inst|clk_20cnt[2]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[2]  ;
-; dda_module:inst|test:inst4|clk_20cnt[3]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[3]  ;
-; dda_module:inst|test:inst5|clk_20cnt[3]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[3]  ;
-; dda_module:inst|test:inst|clk_20cnt[3]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[3]  ;
-; dda_module:inst|test:inst4|clk_20cnt[4]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[4]  ;
-; dda_module:inst|test:inst5|clk_20cnt[4]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[4]  ;
-; dda_module:inst|test:inst|clk_20cnt[4]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[4]  ;
-; dda_module:inst|test:inst4|clk_20cnt[5]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[5]  ;
-; dda_module:inst|test:inst5|clk_20cnt[5]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[5]  ;
-; dda_module:inst|test:inst|clk_20cnt[5]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[5]  ;
-; dda_module:inst|test:inst4|clk_20cnt[6]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[6]  ;
-; dda_module:inst|test:inst5|clk_20cnt[6]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[6]  ;
-; dda_module:inst|test:inst|clk_20cnt[6]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[6]  ;
-; dda_module:inst|test:inst4|clk_20cnt[7]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[7]  ;
-; dda_module:inst|test:inst5|clk_20cnt[7]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[7]  ;
-; dda_module:inst|test:inst|clk_20cnt[7]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[7]  ;
-; dda_module:inst|test:inst4|clk_20cnt[8]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[8]  ;
-; dda_module:inst|test:inst5|clk_20cnt[8]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[8]  ;
-; dda_module:inst|test:inst|clk_20cnt[8]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[8]  ;
-; dda_module:inst|test:inst4|clk_20cnt[9]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[9]  ;
-; dda_module:inst|test:inst5|clk_20cnt[9]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[9]  ;
-; dda_module:inst|test:inst|clk_20cnt[9]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[9]  ;
-; dda_module:inst|test:inst4|clk_20cnt[10] ; Merged with dda_module:inst|test:inst11|clk_20cnt[10] ;
-; dda_module:inst|test:inst5|clk_20cnt[10] ; Merged with dda_module:inst|test:inst11|clk_20cnt[10] ;
-; dda_module:inst|test:inst|clk_20cnt[10]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[10] ;
-; dda_module:inst|test:inst4|clk_cnt[0]    ; Merged with dda_module:inst|test:inst11|clk_cnt[0]    ;
-; dda_module:inst|test:inst5|clk_cnt[0]    ; Merged with dda_module:inst|test:inst11|clk_cnt[0]    ;
-; dda_module:inst|test:inst|clk_cnt[0]     ; Merged with dda_module:inst|test:inst11|clk_cnt[0]    ;
-; dda_module:inst|test:inst4|clk_cnt[1]    ; Merged with dda_module:inst|test:inst11|clk_cnt[1]    ;
-; dda_module:inst|test:inst5|clk_cnt[1]    ; Merged with dda_module:inst|test:inst11|clk_cnt[1]    ;
-; dda_module:inst|test:inst|clk_cnt[1]     ; Merged with dda_module:inst|test:inst11|clk_cnt[1]    ;
-; dda_module:inst|test:inst4|clk_cnt[2]    ; Merged with dda_module:inst|test:inst11|clk_cnt[2]    ;
-; dda_module:inst|test:inst5|clk_cnt[2]    ; Merged with dda_module:inst|test:inst11|clk_cnt[2]    ;
-; dda_module:inst|test:inst|clk_cnt[2]     ; Merged with dda_module:inst|test:inst11|clk_cnt[2]    ;
-; dda_module:inst|test:inst4|clk_cnt[3]    ; Merged with dda_module:inst|test:inst11|clk_cnt[3]    ;
-; dda_module:inst|test:inst5|clk_cnt[3]    ; Merged with dda_module:inst|test:inst11|clk_cnt[3]    ;
-; dda_module:inst|test:inst|clk_cnt[3]     ; Merged with dda_module:inst|test:inst11|clk_cnt[3]    ;
-; dda_module:inst|test:inst4|clk_cnt[4]    ; Merged with dda_module:inst|test:inst11|clk_cnt[4]    ;
-; dda_module:inst|test:inst5|clk_cnt[4]    ; Merged with dda_module:inst|test:inst11|clk_cnt[4]    ;
-; dda_module:inst|test:inst|clk_cnt[4]     ; Merged with dda_module:inst|test:inst11|clk_cnt[4]    ;
-; dda_module:inst|test:inst4|clk_cnt[5]    ; Merged with dda_module:inst|test:inst11|clk_cnt[5]    ;
-; dda_module:inst|test:inst5|clk_cnt[5]    ; Merged with dda_module:inst|test:inst11|clk_cnt[5]    ;
-; dda_module:inst|test:inst|clk_cnt[5]     ; Merged with dda_module:inst|test:inst11|clk_cnt[5]    ;
-; dda_module:inst|test:inst4|clk_cnt[6]    ; Merged with dda_module:inst|test:inst11|clk_cnt[6]    ;
-; dda_module:inst|test:inst5|clk_cnt[6]    ; Merged with dda_module:inst|test:inst11|clk_cnt[6]    ;
-; dda_module:inst|test:inst|clk_cnt[6]     ; Merged with dda_module:inst|test:inst11|clk_cnt[6]    ;
-; dda_module:inst|test:inst4|clk_cnt[7]    ; Merged with dda_module:inst|test:inst11|clk_cnt[7]    ;
-; dda_module:inst|test:inst5|clk_cnt[7]    ; Merged with dda_module:inst|test:inst11|clk_cnt[7]    ;
-; dda_module:inst|test:inst|clk_cnt[7]     ; Merged with dda_module:inst|test:inst11|clk_cnt[7]    ;
-; dda_module:inst|test:inst4|clk_cnt[8]    ; Merged with dda_module:inst|test:inst11|clk_cnt[8]    ;
-; dda_module:inst|test:inst5|clk_cnt[8]    ; Merged with dda_module:inst|test:inst11|clk_cnt[8]    ;
-; dda_module:inst|test:inst|clk_cnt[8]     ; Merged with dda_module:inst|test:inst11|clk_cnt[8]    ;
-; dda_module:inst|test:inst11|clk_20cnt[0] ; Merged with dda_module:inst|test:inst11|clk20u        ;
-; Total Number of Removed Registers = 74   ;                                                       ;
-+------------------------------------------+-------------------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                              ;
++------------------------------------------+------------------------------------------------------+
+; Register name                            ; Reason for Removal                                   ;
++------------------------------------------+------------------------------------------------------+
+; dda_module:inst|test:inst11|Ntemp[7]     ; Stuck at GND due to stuck port data_in               ;
+; dda_module:inst|test:inst5|Ntemp[7]      ; Stuck at GND due to stuck port data_in               ;
+; dda_module:inst|test:inst4|Ntemp[7]      ; Stuck at GND due to stuck port data_in               ;
+; dda_module:inst|test:inst|Ntemp[7]       ; Stuck at GND due to stuck port data_in               ;
+; dda_module:inst|test:inst|pre_WR         ; Merged with dda_module:inst|test:inst11|pre_WR       ;
+; dda_module:inst|test:inst4|pre_WR        ; Merged with dda_module:inst|test:inst11|pre_WR       ;
+; dda_module:inst|test:inst5|pre_WR        ; Merged with dda_module:inst|test:inst11|pre_WR       ;
+; dda_module:inst|test:inst4|busy          ; Merged with dda_module:inst|test:inst11|busy         ;
+; dda_module:inst|test:inst5|busy          ; Merged with dda_module:inst|test:inst11|busy         ;
+; dda_module:inst|test:inst|busy           ; Merged with dda_module:inst|test:inst11|busy         ;
+; dda_module:inst|test:inst4|clk20u        ; Merged with dda_module:inst|test:inst11|clk20u       ;
+; dda_module:inst|test:inst5|clk20u        ; Merged with dda_module:inst|test:inst11|clk20u       ;
+; dda_module:inst|test:inst|clk20u         ; Merged with dda_module:inst|test:inst11|clk20u       ;
+; dda_module:inst|test:inst4|clk_20cnt[0]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[0] ;
+; dda_module:inst|test:inst5|clk_20cnt[0]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[0] ;
+; dda_module:inst|test:inst|clk_20cnt[0]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[0] ;
+; dda_module:inst|test:inst4|clk_20cnt[1]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[1] ;
+; dda_module:inst|test:inst5|clk_20cnt[1]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[1] ;
+; dda_module:inst|test:inst|clk_20cnt[1]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[1] ;
+; dda_module:inst|test:inst4|clk_20cnt[2]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[2] ;
+; dda_module:inst|test:inst5|clk_20cnt[2]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[2] ;
+; dda_module:inst|test:inst|clk_20cnt[2]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[2] ;
+; dda_module:inst|test:inst4|clk_20cnt[3]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[3] ;
+; dda_module:inst|test:inst5|clk_20cnt[3]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[3] ;
+; dda_module:inst|test:inst|clk_20cnt[3]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[3] ;
+; dda_module:inst|test:inst4|clk_20cnt[4]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[4] ;
+; dda_module:inst|test:inst5|clk_20cnt[4]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[4] ;
+; dda_module:inst|test:inst|clk_20cnt[4]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[4] ;
+; dda_module:inst|test:inst4|clk_20cnt[5]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[5] ;
+; dda_module:inst|test:inst5|clk_20cnt[5]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[5] ;
+; dda_module:inst|test:inst|clk_20cnt[5]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[5] ;
+; dda_module:inst|test:inst4|clk_20cnt[6]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[6] ;
+; dda_module:inst|test:inst5|clk_20cnt[6]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[6] ;
+; dda_module:inst|test:inst|clk_20cnt[6]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[6] ;
+; dda_module:inst|test:inst4|clk_20cnt[7]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[7] ;
+; dda_module:inst|test:inst5|clk_20cnt[7]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[7] ;
+; dda_module:inst|test:inst|clk_20cnt[7]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[7] ;
+; dda_module:inst|test:inst4|clk_20cnt[8]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[8] ;
+; dda_module:inst|test:inst5|clk_20cnt[8]  ; Merged with dda_module:inst|test:inst11|clk_20cnt[8] ;
+; dda_module:inst|test:inst|clk_20cnt[8]   ; Merged with dda_module:inst|test:inst11|clk_20cnt[8] ;
+; dda_module:inst|test:inst4|clk_cnt[0]    ; Merged with dda_module:inst|test:inst11|clk_cnt[0]   ;
+; dda_module:inst|test:inst5|clk_cnt[0]    ; Merged with dda_module:inst|test:inst11|clk_cnt[0]   ;
+; dda_module:inst|test:inst|clk_cnt[0]     ; Merged with dda_module:inst|test:inst11|clk_cnt[0]   ;
+; dda_module:inst|test:inst4|clk_cnt[1]    ; Merged with dda_module:inst|test:inst11|clk_cnt[1]   ;
+; dda_module:inst|test:inst5|clk_cnt[1]    ; Merged with dda_module:inst|test:inst11|clk_cnt[1]   ;
+; dda_module:inst|test:inst|clk_cnt[1]     ; Merged with dda_module:inst|test:inst11|clk_cnt[1]   ;
+; dda_module:inst|test:inst4|clk_cnt[2]    ; Merged with dda_module:inst|test:inst11|clk_cnt[2]   ;
+; dda_module:inst|test:inst5|clk_cnt[2]    ; Merged with dda_module:inst|test:inst11|clk_cnt[2]   ;
+; dda_module:inst|test:inst|clk_cnt[2]     ; Merged with dda_module:inst|test:inst11|clk_cnt[2]   ;
+; dda_module:inst|test:inst4|clk_cnt[3]    ; Merged with dda_module:inst|test:inst11|clk_cnt[3]   ;
+; dda_module:inst|test:inst5|clk_cnt[3]    ; Merged with dda_module:inst|test:inst11|clk_cnt[3]   ;
+; dda_module:inst|test:inst|clk_cnt[3]     ; Merged with dda_module:inst|test:inst11|clk_cnt[3]   ;
+; dda_module:inst|test:inst4|clk_cnt[4]    ; Merged with dda_module:inst|test:inst11|clk_cnt[4]   ;
+; dda_module:inst|test:inst5|clk_cnt[4]    ; Merged with dda_module:inst|test:inst11|clk_cnt[4]   ;
+; dda_module:inst|test:inst|clk_cnt[4]     ; Merged with dda_module:inst|test:inst11|clk_cnt[4]   ;
+; dda_module:inst|test:inst4|clk_cnt[5]    ; Merged with dda_module:inst|test:inst11|clk_cnt[5]   ;
+; dda_module:inst|test:inst5|clk_cnt[5]    ; Merged with dda_module:inst|test:inst11|clk_cnt[5]   ;
+; dda_module:inst|test:inst|clk_cnt[5]     ; Merged with dda_module:inst|test:inst11|clk_cnt[5]   ;
+; dda_module:inst|test:inst4|clk_cnt[6]    ; Merged with dda_module:inst|test:inst11|clk_cnt[6]   ;
+; dda_module:inst|test:inst5|clk_cnt[6]    ; Merged with dda_module:inst|test:inst11|clk_cnt[6]   ;
+; dda_module:inst|test:inst|clk_cnt[6]     ; Merged with dda_module:inst|test:inst11|clk_cnt[6]   ;
+; dda_module:inst|test:inst4|clk_cnt[7]    ; Merged with dda_module:inst|test:inst11|clk_cnt[7]   ;
+; dda_module:inst|test:inst5|clk_cnt[7]    ; Merged with dda_module:inst|test:inst11|clk_cnt[7]   ;
+; dda_module:inst|test:inst|clk_cnt[7]     ; Merged with dda_module:inst|test:inst11|clk_cnt[7]   ;
+; dda_module:inst|test:inst4|clk_cnt[8]    ; Merged with dda_module:inst|test:inst11|clk_cnt[8]   ;
+; dda_module:inst|test:inst5|clk_cnt[8]    ; Merged with dda_module:inst|test:inst11|clk_cnt[8]   ;
+; dda_module:inst|test:inst|clk_cnt[8]     ; Merged with dda_module:inst|test:inst11|clk_cnt[8]   ;
+; dda_module:inst|test:inst11|clk_20cnt[0] ; Merged with dda_module:inst|test:inst11|clk20u       ;
+; Total Number of Removed Registers = 68   ;                                                      ;
++------------------------------------------+------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -343,12 +337,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 102   ;
-; Number of registers using Synchronous Clear  ; 25    ;
-; Number of registers using Synchronous Load   ; 1     ;
+; Total registers                              ; 92    ;
+; Number of registers using Synchronous Clear  ; 9     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 86    ;
+; Number of registers using Clock Enable       ; 76    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -391,17 +385,17 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst11|clk_cnt[1]   ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |xuat_xung|dda_module:inst|test:inst11|clk_20cnt[2] ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst4|acc[0]        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst4|acc[2]        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst5|acc[2]        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst11|acc[2]       ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst|acc[2]         ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst11|clk_cnt[8]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst11|clk_20cnt[1] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst|acc[0]         ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst4|acc[8]        ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst5|acc[2]        ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst11|acc[2]       ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |xuat_xung|dda_module:inst|test:inst|acc[2]         ;
 ; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |xuat_xung|dda_module:inst|test:inst4|acc[6]        ;
 ; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |xuat_xung|dda_module:inst|test:inst5|acc[6]        ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |xuat_xung|dda_module:inst|test:inst11|acc[7]       ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |xuat_xung|dda_module:inst|test:inst|acc[1]         ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |xuat_xung|dda_module:inst|test:inst11|acc[5]       ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |xuat_xung|dda_module:inst|test:inst|acc[3]         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
 
@@ -451,7 +445,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Jun 13 16:10:31 2020
+    Info: Processing started: Tue Jun 16 17:10:18 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
 Info: Found 1 design units, including 1 entities, in source file xuat_xung.bdf
     Info: Found entity 1: xuat_xung
@@ -482,11 +476,11 @@ Warning: Using design file dda_module.bdf, which is not specified as a design fi
     Info: Found entity 1: dda_module
 Info: Elaborating entity "dda_module" for hierarchy "dda_module:inst"
 Info: Elaborating entity "test" for hierarchy "dda_module:inst|test:inst"
-Warning (10230): Verilog HDL assignment warning at test.v(14): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at test.v(40): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at test.v(47): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at test.v(53): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at test.v(60): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at test.v(14): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at test.v(39): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at test.v(46): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at test.v(52): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at test.v(59): truncated value with size 32 to match size of target (9)
 Info: Elaborating entity "74373b" for hierarchy "dda_module:inst|74373b:inst2"
 Info: Elaborated megafunction instantiation "dda_module:inst|74373b:inst2"
 Info: Elaborating entity "74138" for hierarchy "dda_module:inst|74138:inst41"
@@ -550,15 +544,15 @@ Warning: Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ENC_3_A"
     Warning (15610): No output dependent on input pin "ENC_3_B"
     Warning (15610): No output dependent on input pin "ENCODER_RESET"
-Info: Implemented 315 device resources after synthesis - the final resource count might be different
+Info: Implemented 278 device resources after synthesis - the final resource count might be different
     Info: Implemented 17 input pins
     Info: Implemented 9 output pins
     Info: Implemented 16 bidirectional pins
-    Info: Implemented 273 logic cells
+    Info: Implemented 236 logic cells
 Info: Generated suppressed messages file F:/THESIS/SOURCE/robot_CPLD/CPLD/test.map.smsg
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 71 warnings
     Info: Peak virtual memory: 230 megabytes
-    Info: Processing ended: Sat Jun 13 16:10:34 2020
+    Info: Processing ended: Tue Jun 16 17:10:21 2020
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
