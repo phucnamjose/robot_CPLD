@@ -102,15 +102,25 @@ set_location_assignment PIN_15 -to LS0
 set_location_assignment PIN_8 -to LS1
 set_location_assignment PIN_17 -to LS2
 set_location_assignment PIN_16 -to LS3
-set_location_assignment PIN_68 -to LIMIT
-set_location_assignment PIN_3 -to ENC_1_A
-set_location_assignment PIN_2 -to ENC_1_B
-set_location_assignment PIN_5 -to ENC_2_A
-set_location_assignment PIN_4 -to ENC_2_B
-set_location_assignment PIN_7 -to ENC_3_A
-set_location_assignment PIN_6 -to ENC_3_B
+set_location_assignment PIN_74 -to LIMIT
+set_location_assignment PIN_5 -to ENC_1_A
+set_location_assignment PIN_4 -to ENC_1_B
+set_location_assignment PIN_7 -to ENC_2_A
+set_location_assignment PIN_6 -to ENC_2_B
 set_location_assignment PIN_85 -to Data[9]
 set_location_assignment PIN_61 -to STOP
 set_global_assignment -name MISC_FILE "F:/THESIS/SOURCE/robot_CPLD/CPLD/test.dpf"
 set_location_assignment PIN_76 -to ENCODER_RESET
 set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to PULSE_WR
+set_global_assignment -name QIP_FILE lpm_counter_enc.qip
+set_global_assignment -name BDF_FILE encoder_counter.bdf
+set_global_assignment -name BDF_FILE read_encoder.bdf
+set_global_assignment -name BDF_FILE read_limit.bdf
+set_location_assignment PIN_3 -to ENC_0_A
+set_location_assignment PIN_2 -to ENC_0_B
+set_global_assignment -name BDF_FILE limit_capture.bdf
+set_location_assignment PIN_68 -to CAPTURE_EN
+set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to LS0
+set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to LS1
+set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to LS2
+set_instance_assignment -name IO_STANDARD "3.3V SCHMITT TRIGGER INPUT" -to LS3

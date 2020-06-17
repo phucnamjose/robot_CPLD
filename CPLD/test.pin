@@ -66,22 +66,22 @@ CHIP  "test"  ASSIGNED TO AN: EPM570T100C5
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 GND*                         : 1         :        :                   :         : 2         :                
-ENC_1_B                      : 2         : input  : 3.3-V LVTTL       :         : 1         : Y              
-ENC_1_A                      : 3         : input  : 3.3-V LVTTL       :         : 1         : Y              
-ENC_2_B                      : 4         : input  : 3.3-V LVTTL       :         : 1         : Y              
-ENC_2_A                      : 5         : input  : 3.3-V LVTTL       :         : 1         : Y              
-ENC_3_B                      : 6         : input  : 3.3-V LVTTL       :         : 1         : Y              
-ENC_3_A                      : 7         : input  : 3.3-V LVTTL       :         : 1         : Y              
-LS1                          : 8         : input  : 3.3-V LVTTL       :         : 1         : Y              
+ENC_0_B                      : 2         : input  : 3.3-V LVTTL       :         : 1         : Y              
+ENC_0_A                      : 3         : input  : 3.3-V LVTTL       :         : 1         : Y              
+ENC_1_B                      : 4         : input  : 3.3-V LVTTL       :         : 1         : Y              
+ENC_1_A                      : 5         : input  : 3.3-V LVTTL       :         : 1         : Y              
+ENC_2_B                      : 6         : input  : 3.3-V LVTTL       :         : 1         : Y              
+ENC_2_A                      : 7         : input  : 3.3-V LVTTL       :         : 1         : Y              
+LS1                          : 8         : input  : 3.3V Schmitt Trigger Input :         : 1         : Y              
 VCCIO1                       : 9         : power  :                   : 3.3V    : 1         :                
 GNDIO                        : 10        : gnd    :                   :         :           :                
 GNDINT                       : 11        : gnd    :                   :         :           :                
 CLK                          : 12        : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCINT                       : 13        : power  :                   : 2.5V/3.3V :           :                
 GND*                         : 14        :        :                   :         : 1         :                
-LS0                          : 15        : input  : 3.3-V LVTTL       :         : 1         : Y              
-LS3                          : 16        : input  : 3.3-V LVTTL       :         : 1         : Y              
-LS2                          : 17        : input  : 3.3-V LVTTL       :         : 1         : Y              
+LS0                          : 15        : input  : 3.3V Schmitt Trigger Input :         : 1         : Y              
+LS3                          : 16        : input  : 3.3V Schmitt Trigger Input :         : 1         : Y              
+LS2                          : 17        : input  : 3.3V Schmitt Trigger Input :         : 1         : Y              
 GND*                         : 18        :        :                   :         : 1         :                
 GND*                         : 19        :        :                   :         : 1         :                
 GND*                         : 20        :        :                   :         : 1         :                
@@ -132,13 +132,13 @@ GND*                         : 64        :        :                   :         
 GNDINT                       : 65        : gnd    :                   :         :           :                
 NWE                          : 66        : input  : 3.3-V LVTTL       :         : 2         : Y              
 NOE                          : 67        : input  : 3.3-V LVTTL       :         : 2         : Y              
-GND*                         : 68        :        :                   :         : 2         :                
+CAPTURE_EN                   : 68        : input  : 3.3-V LVTTL       :         : 2         : Y              
 busy                         : 69        : output : 3.3-V LVTTL       :         : 2         : Y              
 Data[3]                      : 70        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 Data[2]                      : 71        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 Data[1]                      : 72        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 Data[0]                      : 73        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-GND*                         : 74        :        :                   :         : 2         :                
+LIMIT                        : 74        : output : 3.3-V LVTTL       :         : 2         : Y              
 PULSE_WR                     : 75        : input  : 3.3V Schmitt Trigger Input :         : 2         : Y              
 ENCODER_RESET                : 76        : input  : 3.3-V LVTTL       :         : 2         : Y              
 Data[15]                     : 77        : bidir  : 3.3-V LVTTL       :         : 2         : Y              

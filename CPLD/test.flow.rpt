@@ -1,5 +1,5 @@
 Flow report for test
-Tue Jun 16 17:10:31 2020
+Wed Jun 17 19:25:01 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-------------------------+----------------------------------------------+
-; Flow Status             ; Successful - Tue Jun 16 17:10:31 2020        ;
+; Flow Status             ; Successful - Wed Jun 17 19:25:00 2020        ;
 ; Quartus II Version      ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name           ; test                                         ;
 ; Top-level Entity Name   ; xuat_xung                                    ;
@@ -46,8 +46,8 @@ applicable agreement for further details.
 ; Device                  ; EPM570T100C5                                 ;
 ; Timing Models           ; Final                                        ;
 ; Met timing requirements ; Yes                                          ;
-; Total logic elements    ; 203 / 570 ( 36 % )                           ;
-; Total pins              ; 42 / 76 ( 55 % )                             ;
+; Total logic elements    ; 540 / 570 ( 95 % )                           ;
+; Total pins              ; 44 / 76 ( 58 % )                             ;
 ; Total virtual pins      ; 0                                            ;
 ; UFM blocks              ; 0 / 1 ( 0 % )                                ;
 +-------------------------+----------------------------------------------+
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/16/2020 17:10:19 ;
+; Start date & time ; 06/17/2020 19:24:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; test                ;
 +-------------------+---------------------+
@@ -69,10 +69,12 @@ applicable agreement for further details.
 +---------------------------------------+---------------------------------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                       ; Value                                                                     ; Default Value ; Entity Name ; Section Id ;
 +---------------------------------------+---------------------------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID                 ; 35490512119642.159230221901492                                            ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                 ; 35490512119642.159239668210472                                            ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                          ; LPM_BUSTRI                                                                ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                          ; LPM_XOR                                                                   ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                          ; LPM_COUNTER                                                               ; --            ; --          ; --         ;
+; IP_TOOL_NAME                          ; LPM_COUNTER                                                               ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                       ; 9.1                                                                       ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                       ; 9.1                                                                       ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                       ; 9.1                                                                       ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                       ; 9.1                                                                       ; --            ; --          ; --         ;
@@ -97,6 +99,8 @@ applicable agreement for further details.
 ; MISC_FILE                             ; D:/ROBOTTEAM/robotic-lspb-control-step-motor/fpga/CPLD/test.dpf           ; --            ; --          ; --         ;
 ; MISC_FILE                             ; F:/THESIS/FPGA/fpga/CPLD/test.dpf                                         ; --            ; --          ; --         ;
 ; MISC_FILE                             ; F:/THESIS/SOURCE/robot_CPLD/CPLD/test.dpf                                 ; --            ; --          ; --         ;
+; MISC_FILE                             ; lpm_counter_enc.bsf                                                       ; --            ; --          ; --         ;
+; MISC_FILE                             ; lpm_counter_enc_bb.v                                                      ; --            ; --          ; --         ;
 ; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                                                                      ; --            ; --          ; --         ;
 ; TOP_LEVEL_ENTITY                      ; xuat_xung                                                                 ; test          ; --          ; --         ;
 +---------------------------------------+---------------------------------------------------------------------------+---------------+-------------+------------+
@@ -107,11 +111,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 230 MB              ; 00:00:03                           ;
-; Fitter                  ; 00:00:02     ; 1.0                     ; 238 MB              ; 00:00:02                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 207 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 177 MB              ; 00:00:03                           ;
-; Total                   ; 00:00:08     ; --                      ; --                  ; 00:00:09                           ;
+; Analysis & Synthesis    ; 00:00:04     ; 1.0                     ; 241 MB              ; 00:00:06                           ;
+; Fitter                  ; 00:00:06     ; 1.0                     ; 241 MB              ; 00:00:09                           ;
+; Assembler               ; 00:00:01     ; 1.0                     ; 208 MB              ; 00:00:01                           ;
+; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 178 MB              ; 00:00:04                           ;
+; Total                   ; 00:00:13     ; --                      ; --                  ; 00:00:20                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
